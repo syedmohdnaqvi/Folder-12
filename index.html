@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: darkkhaki;
+        }
+        
+        .container {
+            background-color: rgb(164, 191, 199);
+            padding: 10px;
+            border: 5px solid black;
+            margin: 7px;
+            display: inline-block;
+        }
+        
+        img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Bulb example</h2>
+        <p>Now we will understand how to turn on and off a bulb</p>
+        <button onclick="document.getElementById('myimage').src=('pic_bulbon.gif')">Turn on</button>
+        <img src="pic_bulboff.gif" alt="noimg" id="myimage">
+        <button onclick="document.getElementById('myimage').src=('pic_bulboff.gif')">Turn off</button>
+    </div>
+    <br>
+    <h2>Now we will learn how to change fontfamily</h2>
+    <p id="changefont">This font will change</p>
+    <button onclick="document.getElementById('changefont').style.fontFamily='cursive'">Click here</button><br>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = "My name is Syed";
+    </script>
+</body>
+
+</html>
